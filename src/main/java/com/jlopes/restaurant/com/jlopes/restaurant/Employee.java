@@ -1,5 +1,4 @@
-package employee;
-
+package com.jlopes.restaurant;
 
 
 public class Employee {

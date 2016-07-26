@@ -1,7 +1,9 @@
+package com.jlopes.restaurant;
+
 import java.util.ArrayList;
 
-import Restaurant.Restaurant;
-import employee.Employee;
+
+
 
 
 public class MainRestaurant {
@@ -121,7 +123,7 @@ public class MainRestaurant {
 		manager.setAdditionToSalary(restaurant.getCollectMoneyInMonth()*valueOfCommission);
 		manager.calculateEmployeeSalary();
 		
-		ArrayList<Employee> listEmployee = new ArrayList<>();
+		ArrayList<Employee> listEmployee = new ArrayList<Employee>();
 		
 		listEmployee.add(cashier1);
 		listEmployee.add(cashier2);

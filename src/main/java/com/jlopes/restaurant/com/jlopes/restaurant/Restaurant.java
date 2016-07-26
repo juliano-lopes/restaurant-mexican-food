@@ -1,9 +1,9 @@
-package Restaurant;
+package com.jlopes.restaurant;
 
 
 import java.util.ArrayList;
 
-import employee.Employee;
+
 
 public class Restaurant {
 private double collectMoneyInMonth;
