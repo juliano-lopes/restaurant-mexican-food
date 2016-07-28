@@ -1,15 +1,12 @@
-package mainrestaurant;
+package com.jlopes.restaurant;
 
 import java.util.ArrayList;
 
-import employees.Cashier;
-import employees.Cook;
-import employees.Employee;
-import employees.Manager;
-import employees.Waiter;
-
-
-
+import com.jlopes.restaurant.employees.Cashier;
+import com.jlopes.restaurant.employees.Cook;
+import com.jlopes.restaurant.employees.Employee;
+import com.jlopes.restaurant.employees.Manager;
+import com.jlopes.restaurant.employees.Waiter;
 
 
 public class MainRestaurant {

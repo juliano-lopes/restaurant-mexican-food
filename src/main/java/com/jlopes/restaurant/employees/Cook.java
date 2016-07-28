@@ -1,4 +1,4 @@
-package employees;
+package com.jlopes.restaurant.employees;
 
 public class Cook extends Employee {
 public Cook(String name, double basicSalary){

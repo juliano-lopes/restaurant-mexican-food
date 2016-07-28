@@ -1,9 +1,9 @@
-package mainrestaurant;
+package com.jlopes.restaurant;
 
 
 import java.util.ArrayList;
 
-import employees.Employee;
+import com.jlopes.restaurant.employees.Employee;
 
 
 
