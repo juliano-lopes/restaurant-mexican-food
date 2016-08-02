@@ -11,13 +11,14 @@ public class Manager extends Employee {
 	}
 	
 	
-	public void calculateSalary(){
+	public double calculateSalary(){
 		RestaurantService restaurant = new RestaurantService();
 		
-		this.fullSalary = this.basicSalary + (restaurant.collectedMoneyInMonth() * 0.05);
+		return  this.basicSalary + (restaurant.collectedMoneyInMonth() * 0.05);
 		
 		
 	}
+	
 	
 
 }

@@ -14,7 +14,7 @@ public class MainRestaurant {
 			EmployeeService employeeService = new EmployeeService();
 			RestaurantService restaurantService = new RestaurantService();
 			ArrayList<Employee> employees = (ArrayList<Employee>) employeeService.getAll();
-			employees = (ArrayList<Employee>) employeeService.calculationOfAllTheSalaries(employees);
+			
 			
 PrinterData printer = new PrinterData();
 			printer.showEmployeesData(employees);

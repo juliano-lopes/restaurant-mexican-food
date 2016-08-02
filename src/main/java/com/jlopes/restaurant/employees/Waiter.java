@@ -13,9 +13,9 @@ public Waiter(String name, double basicSalary){
 	
 	
 }
-public void calculateSalary(){
+public double calculateSalary(){
 
-this.fullSalary = this.basicSalary + this.additionalTip();
+return  this.basicSalary + this.additionalTip();
 	
 }
 private int additionalTip(){

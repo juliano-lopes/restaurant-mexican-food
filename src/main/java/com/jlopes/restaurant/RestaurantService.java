@@ -19,7 +19,7 @@ public class RestaurantService {
 		
 		double calculation=0;
 		for(Employee employee : employees){
-			calculation+=employee.getFullSalary();
+			calculation+=employee.calculateSalary();
 			
 			
 		}

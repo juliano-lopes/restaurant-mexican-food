@@ -45,19 +45,5 @@ public List<Employee> getAll(){
 	
 }
 
-public List<Employee> calculationOfAllTheSalaries(List<Employee> employees){
-	
-	for(Employee employee : employees){
-		employee.calculateSalary();
-		
-		
-	}
-	
-	return employees;
-	
-	
-	
-	
-	
-}
+
 }

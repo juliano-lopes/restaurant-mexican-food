@@ -5,7 +5,7 @@ public class Employee {
 	protected final String name;
 	protected final String profession;
 	protected double basicSalary;
-protected double fullSalary;
+
 public String getName(){
 	return name;
 	
@@ -15,11 +15,6 @@ public String getProfession(){
 	
 }
 
-public double getFullSalary(){
-	return fullSalary;
-	
-}
-	
 public Employee(String name, String profession, double basicSalary){
 		this.name = name;
 		this.profession = profession;
@@ -28,12 +23,13 @@ public Employee(String name, String profession, double basicSalary){
 
 			
 		}
+
+public double calculateSalary(){
+	return this.basicSalary;
 	
-	public void calculateSalary(){
-this.fullSalary = this.basicSalary;
-		
-		
-	}
+}
+	
+	
 
 
 
