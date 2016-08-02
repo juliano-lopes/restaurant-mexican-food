@@ -1,5 +1,7 @@
 package com.jlopes.restaurant.employees;
 
+import com.jlopes.restaurant.RestaurantService;
+
 public class Manager extends Employee {
 	
 	public Manager(String name, double basicSalary){
@@ -8,8 +10,11 @@ public class Manager extends Employee {
 		
 	}
 	
-	public void additionToSalary(double collectedMoneyInMonth){
-		this.salary += collectedMoneyInMonth * 0.05;
+	
+	public void calculateSalary(){
+		RestaurantService restaurant = new RestaurantService();
+		
+		this.fullSalary = this.basicSalary + (restaurant.collectedMoneyInMonth() * 0.05);
 		
 		
 	}

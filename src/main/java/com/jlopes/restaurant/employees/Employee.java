@@ -4,30 +4,39 @@ package com.jlopes.restaurant.employees;
 public class Employee {
 	protected final String name;
 	protected final String profession;
-	protected double salary;
+	protected double basicSalary;
+protected double fullSalary;
+public String getName(){
+	return name;
+	
+}
+public String getProfession(){
+	return profession;
+	
+}
 
-	public Employee(String name, String profession, double salary){
+public double getFullSalary(){
+	return fullSalary;
+	
+}
+	
+public Employee(String name, String profession, double basicSalary){
 		this.name = name;
 		this.profession = profession;
-		this.salary = salary;
+		this.basicSalary = basicSalary;
 
 
 			
 		}
-
-
-	public double getSalary(){
-		return  salary;
+	
+	public void calculateSalary(){
+this.fullSalary = this.basicSalary;
 		
 		
 	}
-	public void showDataOfEmployee(){
-		System.out.println("Nome: "+this.name);
-		System.out.println("Profissão: "+this.profession);
-		System.out.println("Salário: "+this.getSalary());
-		
-		
 
-	}
+
+
+	
 
 	}
