@@ -25,8 +25,8 @@ public List<Employee> getAll(){
 	Waiter  waiter2 = new Waiter("Gustavo Alves",880.00);
 	Waiter  waiter3 = new Waiter("Algusto Alves",880.00);
 	Waiter  waiter4 = new Waiter("Marcelo Alves",880.00);
-
-	Manager manager = new Manager("Gilberto Mendes",5000.00);		
+RestaurantService restaurantService  = new RestaurantService();
+	Manager manager = new Manager("Gilberto Mendes",5000.00,restaurantService);		
 
 	employees.add(cashier1);
 	employees.add(cashier2);
