@@ -9,13 +9,7 @@ public Cook(String name, double basicSalary){
 	
 }
 
-public double calculateSalary(){
-	
-	
-	return this.basicSalary;
-	
-	
-}
+
 
 
 }

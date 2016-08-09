@@ -7,13 +7,7 @@ public class Cashier extends Employee {
 		
 		
 	}
-	public double calculateSalary(){
-		
-		
-		return this.basicSalary;
-		
-		
-	}
+	
 
 	
 	
