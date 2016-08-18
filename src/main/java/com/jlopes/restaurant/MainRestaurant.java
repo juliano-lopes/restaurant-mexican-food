@@ -11,8 +11,9 @@ public class MainRestaurant {
 	public static void main(String[] args) {
 		 
 			
-			EmployeeService employeeService = new EmployeeService();
-			RestaurantService restaurantService = new RestaurantService();
+		RestaurantService restaurantService = new RestaurantService();
+		EmployeeService employeeService = new EmployeeService(restaurantService);
+			
 			ArrayList<Employee> employees = (ArrayList<Employee>) employeeService.getAll();
 			
 			

@@ -10,6 +10,12 @@ import com.jlopes.restaurant.employees.Manager;
 import com.jlopes.restaurant.employees.Waiter;
 
 public class EmployeeService {
+	RestaurantService restaurantService;
+	public EmployeeService(RestaurantService restaurantService){
+		this.restaurantService = restaurantService;
+		
+		
+	}
 public List<Employee> getAll(){
 	List<Employee> employees = new ArrayList<Employee>();
 	
@@ -23,10 +29,10 @@ public List<Employee> getAll(){
 	
 	Waiter  waiter1 = new Waiter("Leandro Alves",880.00);
 	Waiter  waiter2 = new Waiter("Gustavo Alves",880.00);
-	Waiter  waiter3 = new Waiter("Algusto Alves",880.00);
+	Waiter waiter3 = new Waiter("Algusto Alves",880.00);
 	Waiter  waiter4 = new Waiter("Marcelo Alves",880.00);
-RestaurantService restaurantService  = new RestaurantService();
-	Manager manager = new Manager("Gilberto Mendes",5000.00,restaurantService);		
+
+	Manager manager = new Manager("Gilberto Mendes",5000.00,restaurantService.collectedMoneyInMonth());		
 
 	employees.add(cashier1);
 	employees.add(cashier2);
