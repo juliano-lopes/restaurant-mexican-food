@@ -12,7 +12,7 @@ public class MainRestaurant {
 		 
 			
 		RestaurantService restaurantService = new RestaurantService();
-		EmployeeService employeeService = new EmployeeService(restaurantService);
+		IEmployeeService employeeService = new EmployeeServiceHardCode(restaurantService);
 			
 			ArrayList<Employee> employees = (ArrayList<Employee>) employeeService.getAll();
 			

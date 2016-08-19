@@ -1,29 +1,20 @@
 package com.jlopes.restaurant.employees;
 
+import com.jlopes.restaurant.ISalary;
+
 
 
 public class Manager extends Employee {
 	
-private double collectedMoneyInMonth;
+
 
 	
-	public Manager(String name, double basicSalary, double collectedMoneyInMonth){
-		super(name,"Gerente",basicSalary);
-		this.collectedMoneyInMonth = collectedMoneyInMonth;
-		
-		
-		
-		
+	public Manager(String name, ISalary salary){
+		super(name,"Gerente",salary);
+
 	}
 	
 	
-	public double calculateSalary(){
-		
-		
-		return  this.basicSalary + (this.collectedMoneyInMonth * 0.05);
-		
-		
-	}
 	
 	
 

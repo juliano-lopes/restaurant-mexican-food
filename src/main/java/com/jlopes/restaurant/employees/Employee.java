@@ -1,10 +1,13 @@
 package com.jlopes.restaurant.employees;
 
+import com.jlopes.restaurant.ISalary;
+
 
 public class Employee {
 	protected final String name;
 	protected final String profession;
-	protected double basicSalary;
+	ISalary salary;
+	
 
 public String getName(){
 	return name;
@@ -15,17 +18,18 @@ public String getProfession(){
 	
 }
 
-public Employee(String name, String profession, double basicSalary){
+public Employee(String name, String profession, ISalary salary){
 		this.name = name;
 		this.profession = profession;
-		this.basicSalary = basicSalary;
+		
+		this.salary = salary;
 
 
 			
 		}
 
 public double calculateSalary(){
-	return this.basicSalary;
+	return salary.calculateSalary();
 	
 }
 	

@@ -1,28 +1,19 @@
 package com.jlopes.restaurant.employees;
 
-import java.util.Random;
+import com.jlopes.restaurant.ISalary;
 
 
 
 public class Waiter extends Employee {
 	
 	
-public Waiter(String name, double basicSalary){
-	super(name,"Garçom",basicSalary);
+public Waiter(String name, ISalary salary){
+	super(name,"Garçom",salary);
 
 	
 	
 }
-public double calculateSalary(){
 
-return  this.basicSalary + this.additionalTip();
-	
-}
-private int additionalTip(){
-	Random tip = new Random();
-	return tip.nextInt(100);
-	
-}
 
 
 }
